@@ -11,12 +11,12 @@
         </el-header>
         <el-main>
             <div class="pic">
-                <img width="850" v-bind:src="ResData.img_url"/>
+                <img width="750" v-bind:src="ResData.img_url"/>
             </div>
             <div class="word">{{ ResData.word }}</div>
             <div class="author">{{ ResData.word_from }}</div>
              <div class="dateC">
-                 <el-button size="mini" type="primary" icon="el-icon-arrow-left" @click="back"></el-button>
+                 <el-button size="mini" type="primary" icon="el-icon-arrow-left" @click="back" ></el-button>
              <el-date-picker
                 v-model="date"
                 type="date"               
@@ -96,17 +96,15 @@ export default {
   }
   .card {
     margin: 0 auto;
-    width: 850px; /* 宽度值，随便啦 */
-    height: 800px;  /* 高度值，随便啦 */
+    width: 750px; /* 宽度值，随便啦 */  /* 高度值，随便啦 */
   }
   .pic {
-      width: 850px;
+      max-width: 750px;
   }
   .dateC {
-      position: absolute;
-      margin: auto; 
-      
-      bottom: 2%;
+      padding: 30px;
+      margin: auto;      
+
       left: 0;
       right: 0;
   }

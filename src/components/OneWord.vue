@@ -9,7 +9,7 @@
                      </div>
                 </div>
         </el-header>
-        <el-main>
+        <div class="main">
             <div class="pic">
                 <img width="750" v-bind:src="ResData.img_url"/>
             </div>
@@ -28,7 +28,7 @@
                 value-format="yyyy-MM-dd" -->
                 <el-button size="mini" type="primary" icon="el-icon-arrow-right" @click="go"></el-button>
              </div>
-        </el-main>
+        </div>
     </el-container>
     </div>
 </template>
@@ -134,7 +134,7 @@ export default {
     line-height: 200px;
   }
   
-  .el-main {
+  .main {
     background-color: #E9EEF3;
     color: #333;
     text-align: center;

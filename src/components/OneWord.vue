@@ -28,6 +28,10 @@
                 value-format="yyyy-MM-dd" -->
                 <el-button size="mini" type="primary" icon="el-icon-arrow-right" @click="go"></el-button>
              </div>
+             <div class="EQ">
+                 <a href="/question"><p>问题</p></a>
+             <a href="/essay"><p>文章</p></a>
+             </div>
         </el-main>
     </el-container>
     </div>
@@ -157,4 +161,13 @@ export default {
   .el-container:nth-child(7) .el-aside {
     line-height: 320px;
   }
+  a{
+  text-decoration: none;
+  color: #606266;
+} 
+.EQ{
+    padding: 5%;
+   white-space:nowrap;
+   font-size: 28px;
+}
 </style>

@@ -9,6 +9,7 @@
                      </div>
                 </div>
         </el-header>
+        
         <div class="main">
             <div class="pic">
                 <img width="750" v-bind:src="ResData.img_url"/>
@@ -28,15 +29,12 @@
                 value-format="yyyy-MM-dd" -->
                 <el-button size="mini" type="primary" icon="el-icon-arrow-right" @click="go"></el-button>
              </div>
-<<<<<<< HEAD
              <div class="EQ">
                  <a href="/question"><p>问题</p></a>
              <a href="/essay"><p>文章</p></a>
              </div>
-        </el-main>
-=======
         </div>
->>>>>>> cfdb127606182304fed5870fb7d8498fb09e4705
+
     </el-container>
     </div>
 </template>
@@ -168,7 +166,7 @@ export default {
   color: #606266;
 } 
 .EQ{
-    padding: 5%;
+padding: 5%;
    white-space:nowrap;
    font-size: 28px;
 }

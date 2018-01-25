@@ -17,8 +17,8 @@
             <div class="word">{{ ResData.word }}</div>
             <div class="author">{{ ResData.word_from }}</div>
             <div class="EQ">
-                 <a href="#/question"><p>ONE问题</p></a>
-             <a href="#/essay"><p>ONE文章</p></a>
+                 <a href="#/question"><p>问题</p></a>
+             <a href="#/essay"><p>文章</p></a>
              </div>
              <div class="dateC">
                  <el-button size="mini" type="primary" icon="el-icon-arrow-left" @click="back" ></el-button>

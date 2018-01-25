@@ -9,14 +9,14 @@
                      </div>
                 </div>
         </el-header>
-        <el-main>
+        <div class="main">
             <div class="pic">
-                <img width="850" v-bind:src="ResData.img_url"/>
+                <img width="750" v-bind:src="ResData.img_url"/>
             </div>
             <div class="word">{{ ResData.word }}</div>
             <div class="author">{{ ResData.word_from }}</div>
              <div class="dateC">
-                 <el-button size="mini" type="primary" icon="el-icon-arrow-left" @click="back"></el-button>
+                 <el-button size="mini" type="primary" icon="el-icon-arrow-left" @click="back" ></el-button>
              <el-date-picker
                 v-model="date"
                 type="date"               
@@ -28,11 +28,15 @@
                 value-format="yyyy-MM-dd" -->
                 <el-button size="mini" type="primary" icon="el-icon-arrow-right" @click="go"></el-button>
              </div>
+<<<<<<< HEAD
              <div class="EQ">
                  <a href="/question"><p>问题</p></a>
              <a href="/essay"><p>文章</p></a>
              </div>
         </el-main>
+=======
+        </div>
+>>>>>>> cfdb127606182304fed5870fb7d8498fb09e4705
     </el-container>
     </div>
 </template>
@@ -100,17 +104,15 @@ export default {
   }
   .card {
     margin: 0 auto;
-    width: 850px; /* 宽度值，随便啦 */
-    height: 800px;  /* 高度值，随便啦 */
+    width: 750px; /* 宽度值，随便啦 */  /* 高度值，随便啦 */
   }
   .pic {
-      width: 850px;
+      max-width: 750px;
   }
   .dateC {
-      position: absolute;
-      margin: auto; 
-      
-      bottom: 2%;
+      padding: 30px;
+      margin: auto;      
+
       left: 0;
       right: 0;
   }
@@ -140,7 +142,7 @@ export default {
     line-height: 200px;
   }
   
-  .el-main {
+  .main {
     background-color: #E9EEF3;
     color: #333;
     text-align: center;

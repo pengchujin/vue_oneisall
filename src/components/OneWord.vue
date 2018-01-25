@@ -16,6 +16,10 @@
             </div>
             <div class="word">{{ ResData.word }}</div>
             <div class="author">{{ ResData.word_from }}</div>
+            <div class="EQ">
+                 <a href="#/question"><p>问题</p></a>
+             <a href="#/essay"><p>文章</p></a>
+             </div>
              <div class="dateC">
                  <el-button size="mini" type="primary" icon="el-icon-arrow-left" @click="back" ></el-button>
              <el-date-picker
@@ -29,12 +33,8 @@
                 value-format="yyyy-MM-dd" -->
                 <el-button size="mini" type="primary" icon="el-icon-arrow-right" @click="go"></el-button>
              </div>
-             <div class="EQ">
-                 <a href="/question"><p>问题</p></a>
-             <a href="/essay"><p>文章</p></a>
-             </div>
+             
         </div>
-
     </el-container>
     </div>
 </template>
@@ -110,7 +110,6 @@ export default {
   .dateC {
       padding: 30px;
       margin: auto;      
-
       left: 0;
       right: 0;
   }
